@@ -1,0 +1,124 @@
+import java.util.Scanner;
+
+class Quiz
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int score = 0;
+        int choice;
+        System.out.println("      WELCOME TO THE QUIZ 🎮      ");
+
+        // Question 1
+        System.out.println("\nQ1: What is the closest star to the Earth?");
+        System.out.println("1. Sun");
+        System.out.println("2. Monument");
+        System.out.println("3. Milky Way galaxy");
+        System.out.println("4. Proxima Centauri");
+        System.out.print("Enter your answer: ");
+        choice = sc.nextInt();
+
+        if(choice == 1)
+        {
+            System.out.println("Correct ✅");
+            score += 10;
+        }
+        else
+        {
+            System.out.println("Wrong ❌");
+        }
+
+        // Question 2
+        System.out.println("\nQ2: What is the capital of India?");
+        System.out.println("1. Mumbai");
+        System.out.println("2. Washington");
+        System.out.println("3. River");
+        System.out.println("4. Delhi");
+        System.out.print("Enter your answer: ");
+        choice = sc.nextInt();
+
+        if(choice == 4)
+        {
+            System.out.println("Correct ✅");
+            score += 10;
+        }
+        else
+        {
+            System.out.println("Wrong ❌");
+        }
+
+        // Question 3
+        System.out.println("\nQ3: Which planet is known as the Red Planet?");
+        System.out.println("1. Earth");
+        System.out.println("2. Mars");
+        System.out.println("3. Neptune");
+        System.out.println("4. Jupiter");
+        System.out.print("Enter your answer: ");
+        choice = sc.nextInt();
+
+        if(choice == 2)
+        {
+            System.out.println("Correct ✅");
+            score += 10;
+        }
+        else
+        {
+            System.out.println("Wrong ❌");
+        }
+
+        // Question 4
+        System.out.println("\nQ4: Who invented Java?");
+        System.out.println("1. Dennis Ritchie");
+        System.out.println("2. Bjarne Stroustrup");
+        System.out.println("3. James Gosling");
+        System.out.println("4. Elon Musk");
+        System.out.print("Enter your answer: ");
+        choice = sc.nextInt();
+
+        if(choice == 3)
+        {
+            System.out.println("Correct ✅");
+            score += 10;
+        }
+        else
+        {
+            System.out.println("Wrong ❌");
+        }
+
+        // Question 5
+        System.out.println("\nQ5: What is 5 x 6?");
+        System.out.println("1. 30");
+        System.out.println("2. 25");
+        System.out.println("3. 45");
+        System.out.println("4. 5");
+        System.out.print("Enter your answer: ");
+        choice = sc.nextInt();
+
+        if(choice == 1)
+        {
+            System.out.println("Correct ✅");
+            score += 10;
+        }
+        else
+        {
+            System.out.println("Wrong ❌");
+        }
+        System.out.println("         QUIZ COMPLETED          ");
+        System.out.println("Your Score: " + score + "/50");
+
+        if(score >= 40)
+        {
+            System.out.println("🏆 Excellent! You are a Quiz Master!");
+        }
+        else if(score >= 20)
+        {
+            System.out.println("👍 Good Job! Keep improving!");
+        }
+        else
+        {
+            System.out.println("😅 Keep Practicing!");
+        }
+
+        sc.close();
+    }
+}
