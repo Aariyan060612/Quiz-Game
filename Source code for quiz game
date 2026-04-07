@@ -7,7 +7,7 @@ class Quiz
         Scanner sc = new Scanner(System.in);
         int score = 0;
         int choice;
-        System.out.println("      WELCOME TO THE QUIZ 🎮      ");
+        System.out.println("      WELCOME TO THE QUIZ       ");
 
         // Question 1
         System.out.println("\nQ1: What is the closest star to the Earth?");
@@ -20,12 +20,12 @@ class Quiz
 
         if(choice == 1)
         {
-            System.out.println("Correct ✅");
+            System.out.println("Correct ");
             score += 10;
         }
         else
         {
-            System.out.println("Wrong ❌");
+            System.out.println("Wrong ");
         }
 
         // Question 2
@@ -39,12 +39,12 @@ class Quiz
 
         if(choice == 4)
         {
-            System.out.println("Correct ✅");
+            System.out.println("Correct ");
             score += 10;
         }
         else
         {
-            System.out.println("Wrong ❌");
+            System.out.println("Wrong ");
         }
 
         // Question 3
@@ -58,12 +58,12 @@ class Quiz
 
         if(choice == 2)
         {
-            System.out.println("Correct ✅");
+            System.out.println("Correct ");
             score += 10;
         }
         else
         {
-            System.out.println("Wrong ❌");
+            System.out.println("Wrong ");
         }
 
         // Question 4
@@ -77,12 +77,12 @@ class Quiz
 
         if(choice == 3)
         {
-            System.out.println("Correct ✅");
+            System.out.println("Correct ");
             score += 10;
         }
         else
         {
-            System.out.println("Wrong ❌");
+            System.out.println("Wrong");
         }
 
         // Question 5
@@ -96,27 +96,27 @@ class Quiz
 
         if(choice == 1)
         {
-            System.out.println("Correct ✅");
+            System.out.println("Correct");
             score += 10;
         }
         else
         {
-            System.out.println("Wrong ❌");
+            System.out.println("Wrong ");
         }
         System.out.println("         QUIZ COMPLETED          ");
         System.out.println("Your Score: " + score + "/50");
 
         if(score >= 40)
         {
-            System.out.println("🏆 Excellent! You are a Quiz Master!");
+            System.out.println(" Excellent! You are a Quiz Master!");
         }
         else if(score >= 20)
         {
-            System.out.println("👍 Good Job! Keep improving!");
+            System.out.println(" Good Job! Keep improving!");
         }
         else
         {
-            System.out.println("😅 Keep Practicing!");
+            System.out.println(" Keep Practicing!");
         }
 
         sc.close();
